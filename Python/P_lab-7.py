@@ -6,10 +6,7 @@ class Node:
         self.left = None
         self.right = None
         self.val = item
-
-
 def inorder(root):
-
     if root:
         # Traverse left
         inorder(root.left)
@@ -17,10 +14,7 @@ def inorder(root):
         print(str(root.val) + "->", end='')
         # Traverse right
         inorder(root.right)
-
-
 def postorder(root):
-
     if root:
         # Traverse left
         postorder(root.left)
@@ -28,10 +22,7 @@ def postorder(root):
         postorder(root.right)
         # Traverse root
         print(str(root.val) + "->", end='')
-
-
 def preorder(root):
-
     if root:
         # Traverse root
         print(str(root.val) + "->", end='')
@@ -39,7 +30,6 @@ def preorder(root):
         preorder(root.left)
         # Traverse right
         preorder(root.right)
-
 
 root = Node(1)
 root.left = Node(2)
